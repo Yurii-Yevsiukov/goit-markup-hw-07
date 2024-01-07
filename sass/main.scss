@@ -1,0 +1,22 @@
+// utils
+@import "./utils/variables";
+// base styles
+@import "./base/common";
+// components
+@import "./components/logo";
+@import "./components/button";
+@import "./components/socials";
+@import "./components/modal";
+// layouts (секції)
+@import "./layouts/site-header";
+@import "./layouts/site-footer";
+// home-page
+@import "./home-page/solutions";
+@import "./home-page/features";
+@import "./home-page/employment";
+@import "./home-page/team";
+@import "./home-page/clients";
+// portfolio-page
+@import "./portfolio-page/filter";
+@import "./portfolio-page/portfolio";
+
