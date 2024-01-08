@@ -21,89 +21,91 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: $timingFunсtion;
-}
 
-.logo:hover,
-.logo:focus {
-    color: $accentColor;
-}
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 
-.logo span {
-    color: $accentColor;
+    span {
+        color: $accentColor;
+    }
 }
 
 .nav-list {
     display: flex;
     margin-left: 93px;
-}
 
-.nav-list__item:not(:first-child) {
-    margin-left: 52px;
-}
 
-.nav-list__link {
-    position: relative;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    letter-spacing: 0.28px;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timingFunсtion;
-}
+    &__item:not(:first-child) {
+        margin-left: 52px;
+    }
 
-.nav-list__link.current {
-    color: $accentColor;
-    cursor: default;
-}
+    &__link {
+        position: relative;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        letter-spacing: 0.28px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: $timingFunсtion;
+    }
 
-.nav-list__link::after {
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $accentColor;
-    border-radius: 2px;
-    content: "";
-    opacity: 0;
-    transition-duration: 250ms;
-    transition-timing-function: $timingFunсtion;
-}
+    &__link.current {
+        color: $accentColor;
+        cursor: default;
+    }
 
-.nav-list__link.current::after {
-    opacity: 1;
-    transition-duration: 250ms;
-    transition-timing-function: $timingFunсtion;
+    &__link::after {
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $accentColor;
+        border-radius: 2px;
+        content: "";
+        opacity: 0;
+        transition-duration: 250ms;
+        transition-timing-function: $timingFunсtion;
+    }
+
+    &__link.current::after {
+        opacity: 1;
+        transition-duration: 250ms;
+        transition-timing-function: $timingFunсtion;
+    }
 }
 
 .contact-list {
     display: flex;
     margin-left: auto;
-}
 
-.contact-list__item:not(:first-child) {
-    margin-left: 30px;
-}
 
-.contact-list__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 0.28px;
-    font-weight: 500;
-    color: $primaryTextColor;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: $timingFunсtion;
-}
+    &__item:not(:first-child) {
+        margin-left: 30px;
+    }
 
-.contact-list__link:hover,
-.contact-list__link:focus {
-    color: $accentColor;
-}
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.28px;
+        font-weight: 500;
+        color: $primaryTextColor;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: $timingFunсtion;
+    }
 
-.contact-list__icon {
-    margin-right: 10px;
-    fill: currentColor;
+    &__link:hover,
+    .contact-list__link:focus {
+        color: $accentColor;
+    }
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+    }
 }

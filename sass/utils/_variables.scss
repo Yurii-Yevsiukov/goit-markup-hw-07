@@ -4,3 +4,9 @@ $accentColor: #2196f3;
 $primaryBgColor: #ffffff;
 $secondBgColor: #f5f4fa;
 $timingFunсtion: cubic-bezier(0.4, 0, 0.2, 1);
+
+body {
+    font-family: Roboto, sans-serif;
+    color: $primaryTextColor;
+    background-color: $primaryBgColor;
+}

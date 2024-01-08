@@ -1,9 +1,3 @@
-body {
-    font-family: Roboto, sans-serif;
-    color: $primaryTextColor;
-    background-color: $primaryBgColor;
-}
-
 h1,
 h2,
 h3,
@@ -50,11 +44,12 @@ img {
     font-size: 14px;
     font-weight: 500;
     color: $secondTextColor;
-}
 
-.link:hover,
-.link:focus {
-    color: $accentColor;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
 
 .button {
@@ -67,10 +62,11 @@ img {
     background-color: $secondBgColor;
     border-radius: 4px;
     cursor: pointer;
-}
 
-.button:hover,
-.button:focus {
-    color: $primaryBgColor;
-    background-color: $accentColor;
+
+    &:hover,
+    &:focus {
+        color: $primaryBgColor;
+        background-color: $accentColor;
+    }
 }

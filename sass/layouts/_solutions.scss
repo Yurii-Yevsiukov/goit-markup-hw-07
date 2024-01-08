@@ -41,9 +41,9 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: $timingFunсtion;
-}
 
-.solutions-button:hover,
-.solutions-button:focus {
-    background-color: #188ce8;
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
 }
